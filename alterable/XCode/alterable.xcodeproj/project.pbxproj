@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */; };
+		8D0C4E8E0486CD37000505A6 /* main.nib in Resources */ = {isa = PBXBuildFile; fileRef = 02345980000FD03B11CA0E72 /* main.nib */; };
+		8D0C4E900486CD37000505A6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20286C2BFDCF999611CA2CEA /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+		D40B96C7141BCAD0009BA02C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40B96C6141BCAD0009BA02C /* Cocoa.framework */; };
+		D41DCA70141CBDC400C0185B /* cefixNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41DCA6F141CBDC400C0185B /* cefixNet.framework */; };
+		D41DCA81141CBE5200C0185B /* cefixNet.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D41DCA6F141CBDC400C0185B /* cefixNet.framework */; };
+		D42994B315012E5700C49BE9 /* connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D42994AB15012E5700C49BE9 /* connection.cpp */; };
+		D42994B415012E5700C49BE9 /* io_service_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D42994AC15012E5700C49BE9 /* io_service_pool.cpp */; };
+		D42994B515012E5700C49BE9 /* mime_types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D42994AD15012E5700C49BE9 /* mime_types.cpp */; };
+		D42994B615012E5700C49BE9 /* reply.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D42994AE15012E5700C49BE9 /* reply.cpp */; };
+		D42994B715012E5700C49BE9 /* request_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D42994AF15012E5700C49BE9 /* request_handler.cpp */; };
+		D42994B815012E5700C49BE9 /* request_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D42994B015012E5700C49BE9 /* request_parser.cpp */; };
+		D42994B915012E5700C49BE9 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D42994B115012E5700C49BE9 /* server.cpp */; };
+		D42994BA15012E5700C49BE9 /* WebAlterableControllerImplementation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D42994B215012E5700C49BE9 /* WebAlterableControllerImplementation.cpp */; };
+		D42994D215012F2300C49BE9 /* frontend in Resources */ = {isa = PBXBuildFile; fileRef = D42994D115012F2300C49BE9 /* frontend */; };
+		D44A61D50B1A0ACC00960064 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44A61D30B1A0ACC00960064 /* AGL.framework */; };
+		D44A61D60B1A0ACC00960064 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44A61D40B1A0ACC00960064 /* OpenGL.framework */; };
+		D45ED6E20CE3315400D0CD6E /* OpenThreads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6DB0CE3315400D0CD6E /* OpenThreads.framework */; };
+		D45ED6E30CE3315400D0CD6E /* osg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6DC0CE3315400D0CD6E /* osg.framework */; };
+		D45ED6E40CE3315400D0CD6E /* osgDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6DD0CE3315400D0CD6E /* osgDB.framework */; };
+		D45ED6E50CE3315400D0CD6E /* osgGA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6DE0CE3315400D0CD6E /* osgGA.framework */; };
+		D45ED6E60CE3315400D0CD6E /* osgText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6DF0CE3315400D0CD6E /* osgText.framework */; };
+		D45ED6E70CE3315400D0CD6E /* osgUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6E00CE3315400D0CD6E /* osgUtil.framework */; };
+		D45ED6E80CE3315400D0CD6E /* osgViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6E10CE3315400D0CD6E /* osgViewer.framework */; };
+		D45ED89A0CE3316D00D0CD6E /* OpenThreads.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6DB0CE3315400D0CD6E /* OpenThreads.framework */; };
+		D45ED89B0CE3316D00D0CD6E /* osg.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6DC0CE3315400D0CD6E /* osg.framework */; };
+		D45ED89C0CE3316D00D0CD6E /* osgDB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6DD0CE3315400D0CD6E /* osgDB.framework */; };
+		D45ED89D0CE3316D00D0CD6E /* osgGA.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6DE0CE3315400D0CD6E /* osgGA.framework */; };
+		D45ED89E0CE3316D00D0CD6E /* osgText.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6DF0CE3315400D0CD6E /* osgText.framework */; };
+		D45ED89F0CE3316D00D0CD6E /* osgUtil.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6E00CE3315400D0CD6E /* osgUtil.framework */; };
+		D45ED8A00CE3316D00D0CD6E /* osgViewer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6E10CE3315400D0CD6E /* osgViewer.framework */; };
+		D464C3300F5EE3C9008E1AC3 /* cefix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D464C32F0F5EE3C9008E1AC3 /* cefix.framework */; };
+		D464C3330F5EE3CE008E1AC3 /* cefix.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D464C32F0F5EE3C9008E1AC3 /* cefix.framework */; };
+		D484D932150102D400303A37 /* sw_widget_theme.png in Resources */ = {isa = PBXBuildFile; fileRef = D484D930150102D400303A37 /* sw_widget_theme.png */; };
+		D484D933150102D400303A37 /* sw_widget_theme.xml in Resources */ = {isa = PBXBuildFile; fileRef = D484D931150102D400303A37 /* sw_widget_theme.xml */; };
+		D4FB11B10FB860D100F67E0E /* Sketch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4FB11B00FB860D100F67E0E /* Sketch.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D44A61E20B1A0B0300960064 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D41DCA81141CBE5200C0185B /* cefixNet.framework in CopyFiles */,
+				D464C3330F5EE3CE008E1AC3 /* cefix.framework in CopyFiles */,
+				D45ED89A0CE3316D00D0CD6E /* OpenThreads.framework in CopyFiles */,
+				D45ED89B0CE3316D00D0CD6E /* osg.framework in CopyFiles */,
+				D45ED89C0CE3316D00D0CD6E /* osgDB.framework in CopyFiles */,
+				D45ED89D0CE3316D00D0CD6E /* osgGA.framework in CopyFiles */,
+				D45ED89E0CE3316D00D0CD6E /* osgText.framework in CopyFiles */,
+				D45ED89F0CE3316D00D0CD6E /* osgUtil.framework in CopyFiles */,
+				D45ED8A00CE3316D00D0CD6E /* osgViewer.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1870340FFE93FCAF11CA0CD7 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/main.nib; sourceTree = "<group>"; };
+		20286C2BFDCF999611CA2CEA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		32DBCF6D0370B57F00C91783 /* cefixTemplate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cefixTemplate_Prefix.pch; sourceTree = "<group>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4E970486CD37000505A6 /* cefix alterable example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cefix alterable example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40B96C6141BCAD0009BA02C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		D41DCA6F141CBDC400C0185B /* cefixNet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cefixNet.framework; path = ../../../libs/cefixNet.framework; sourceTree = SOURCE_ROOT; };
+		D42994A015012E5700C49BE9 /* connection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = connection.hpp; sourceTree = "<group>"; };
+		D42994A115012E5700C49BE9 /* header.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = header.hpp; sourceTree = "<group>"; };
+		D42994A215012E5700C49BE9 /* io_service_pool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = io_service_pool.hpp; sourceTree = "<group>"; };
+		D42994A315012E5700C49BE9 /* mime_types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mime_types.hpp; sourceTree = "<group>"; };
+		D42994A415012E5700C49BE9 /* reply.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = reply.hpp; sourceTree = "<group>"; };
+		D42994A515012E5700C49BE9 /* request.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = request.hpp; sourceTree = "<group>"; };
+		D42994A615012E5700C49BE9 /* request_handler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = request_handler.hpp; sourceTree = "<group>"; };
+		D42994A715012E5700C49BE9 /* request_parser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = request_parser.hpp; sourceTree = "<group>"; };
+		D42994A815012E5700C49BE9 /* server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = server.hpp; sourceTree = "<group>"; };
+		D42994A915012E5700C49BE9 /* WebAlterableControllerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAlterableControllerImplementation.h; sourceTree = "<group>"; };
+		D42994AB15012E5700C49BE9 /* connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = connection.cpp; sourceTree = "<group>"; };
+		D42994AC15012E5700C49BE9 /* io_service_pool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = io_service_pool.cpp; sourceTree = "<group>"; };
+		D42994AD15012E5700C49BE9 /* mime_types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mime_types.cpp; sourceTree = "<group>"; };
+		D42994AE15012E5700C49BE9 /* reply.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reply.cpp; sourceTree = "<group>"; };
+		D42994AF15012E5700C49BE9 /* request_handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = request_handler.cpp; sourceTree = "<group>"; };
+		D42994B015012E5700C49BE9 /* request_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = request_parser.cpp; sourceTree = "<group>"; };
+		D42994B115012E5700C49BE9 /* server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
+		D42994B215012E5700C49BE9 /* WebAlterableControllerImplementation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebAlterableControllerImplementation.cpp; sourceTree = "<group>"; };
+		D42994D115012F2300C49BE9 /* frontend */ = {isa = PBXFileReference; lastKnownFileType = folder; name = frontend; path = ../../../addons/WebAlterableControllerImplementation/media/frontend; sourceTree = "<group>"; };
+		D44A61D30B1A0ACC00960064 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		D44A61D40B1A0ACC00960064 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		D45ED6DB0CE3315400D0CD6E /* OpenThreads.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenThreads.framework; path = ../../../libs/frameworks/OpenThreads.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6DC0CE3315400D0CD6E /* osg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osg.framework; path = ../../../libs/frameworks/osg.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6DD0CE3315400D0CD6E /* osgDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgDB.framework; path = ../../../libs/frameworks/osgDB.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6DE0CE3315400D0CD6E /* osgGA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgGA.framework; path = ../../../libs/frameworks/osgGA.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6DF0CE3315400D0CD6E /* osgText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgText.framework; path = ../../../libs/frameworks/osgText.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6E00CE3315400D0CD6E /* osgUtil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgUtil.framework; path = ../../../libs/frameworks/osgUtil.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6E10CE3315400D0CD6E /* osgViewer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgViewer.framework; path = ../../../libs/frameworks/osgViewer.framework; sourceTree = SOURCE_ROOT; };
+		D464C32F0F5EE3C9008E1AC3 /* cefix.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cefix.framework; path = ../../../libs/cefix.framework; sourceTree = SOURCE_ROOT; };
+		D484D930150102D400303A37 /* sw_widget_theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sw_widget_theme.png; path = ../../../cefix/themes/sw_widget_theme.png; sourceTree = "<group>"; };
+		D484D931150102D400303A37 /* sw_widget_theme.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sw_widget_theme.xml; path = ../../../cefix/themes/sw_widget_theme.xml; sourceTree = "<group>"; };
+		D4FB11AF0FB860D100F67E0E /* Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sketch.h; sourceTree = "<group>"; };
+		D4FB11B00FB860D100F67E0E /* Sketch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sketch.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+				D44A61D50B1A0ACC00960064 /* AGL.framework in Frameworks */,
+				D44A61D60B1A0ACC00960064 /* OpenGL.framework in Frameworks */,
+				D45ED6E20CE3315400D0CD6E /* OpenThreads.framework in Frameworks */,
+				D45ED6E30CE3315400D0CD6E /* osg.framework in Frameworks */,
+				D45ED6E40CE3315400D0CD6E /* osgDB.framework in Frameworks */,
+				D45ED6E50CE3315400D0CD6E /* osgGA.framework in Frameworks */,
+				D45ED6E60CE3315400D0CD6E /* osgText.framework in Frameworks */,
+				D45ED6E70CE3315400D0CD6E /* osgUtil.framework in Frameworks */,
+				D45ED6E80CE3315400D0CD6E /* osgViewer.framework in Frameworks */,
+				D464C3300F5EE3C9008E1AC3 /* cefix.framework in Frameworks */,
+				D40B96C7141BCAD0009BA02C /* Cocoa.framework in Frameworks */,
+				D41DCA70141CBDC400C0185B /* cefixNet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E970486CD37000505A6 /* cefix alterable example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* cefixTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				20286C2AFDCF999611CA2CEA /* src */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = cefixTemplate;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D429949E15012E5700C49BE9 /* WebAlterableControllerImplementation */,
+				32DBCF6D0370B57F00C91783 /* cefixTemplate_Prefix.pch */,
+				20286C2BFDCF999611CA2CEA /* main.cpp */,
+				D4FB11AF0FB860D100F67E0E /* Sketch.h */,
+				D4FB11B00FB860D100F67E0E /* Sketch.cpp */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D42994D115012F2300C49BE9 /* frontend */,
+				D484D930150102D400303A37 /* sw_widget_theme.png */,
+				D484D931150102D400303A37 /* sw_widget_theme.xml */,
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+				0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */,
+				02345980000FD03B11CA0E72 /* main.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D41DCA6F141CBDC400C0185B /* cefixNet.framework */,
+				D40B96C6141BCAD0009BA02C /* Cocoa.framework */,
+				D464C32F0F5EE3C9008E1AC3 /* cefix.framework */,
+				D45ED6DB0CE3315400D0CD6E /* OpenThreads.framework */,
+				D45ED6DC0CE3315400D0CD6E /* osg.framework */,
+				D45ED6DD0CE3315400D0CD6E /* osgDB.framework */,
+				D45ED6DE0CE3315400D0CD6E /* osgGA.framework */,
+				D45ED6DF0CE3315400D0CD6E /* osgText.framework */,
+				D45ED6E00CE3315400D0CD6E /* osgUtil.framework */,
+				D45ED6E10CE3315400D0CD6E /* osgViewer.framework */,
+				D44A61D30B1A0ACC00960064 /* AGL.framework */,
+				D44A61D40B1A0ACC00960064 /* OpenGL.framework */,
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		D429949E15012E5700C49BE9 /* WebAlterableControllerImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				D429949F15012E5700C49BE9 /* include */,
+				D42994AA15012E5700C49BE9 /* src */,
+			);
+			name = WebAlterableControllerImplementation;
+			path = ../../../addons/WebAlterableControllerImplementation;
+			sourceTree = "<group>";
+		};
+		D429949F15012E5700C49BE9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D42994A015012E5700C49BE9 /* connection.hpp */,
+				D42994A115012E5700C49BE9 /* header.hpp */,
+				D42994A215012E5700C49BE9 /* io_service_pool.hpp */,
+				D42994A315012E5700C49BE9 /* mime_types.hpp */,
+				D42994A415012E5700C49BE9 /* reply.hpp */,
+				D42994A515012E5700C49BE9 /* request.hpp */,
+				D42994A615012E5700C49BE9 /* request_handler.hpp */,
+				D42994A715012E5700C49BE9 /* request_parser.hpp */,
+				D42994A815012E5700C49BE9 /* server.hpp */,
+				D42994A915012E5700C49BE9 /* WebAlterableControllerImplementation.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D42994AA15012E5700C49BE9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D42994AB15012E5700C49BE9 /* connection.cpp */,
+				D42994AC15012E5700C49BE9 /* io_service_pool.cpp */,
+				D42994AD15012E5700C49BE9 /* mime_types.cpp */,
+				D42994AE15012E5700C49BE9 /* reply.cpp */,
+				D42994AF15012E5700C49BE9 /* request_handler.cpp */,
+				D42994B015012E5700C49BE9 /* request_parser.cpp */,
+				D42994B115012E5700C49BE9 /* server.cpp */,
+				D42994B215012E5700C49BE9 /* WebAlterableControllerImplementation.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* alterable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "alterable" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+				D44A61E20B1A0B0300960064 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = alterable;
+			productInstallPath = "$(HOME)/Applications";
+			productName = cefixTemplate;
+			productReference = 8D0C4E970486CD37000505A6 /* cefix alterable example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "alterable" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 20286C29FDCF999611CA2CEA /* cefixTemplate */;
+			projectDirPath = "";
+			projectRoot = ..;
+			targets = (
+				8D0C4E890486CD37000505A6 /* alterable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */,
+				8D0C4E8E0486CD37000505A6 /* main.nib in Resources */,
+				D484D932150102D400303A37 /* sw_widget_theme.png in Resources */,
+				D484D933150102D400303A37 /* sw_widget_theme.xml in Resources */,
+				D42994D215012F2300C49BE9 /* frontend in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E900486CD37000505A6 /* main.cpp in Sources */,
+				D4FB11B10FB860D100F67E0E /* Sketch.cpp in Sources */,
+				D42994B315012E5700C49BE9 /* connection.cpp in Sources */,
+				D42994B415012E5700C49BE9 /* io_service_pool.cpp in Sources */,
+				D42994B515012E5700C49BE9 /* mime_types.cpp in Sources */,
+				D42994B615012E5700C49BE9 /* reply.cpp in Sources */,
+				D42994B715012E5700C49BE9 /* request_handler.cpp in Sources */,
+				D42994B815012E5700C49BE9 /* request_parser.cpp in Sources */,
+				D42994B915012E5700C49BE9 /* server.cpp in Sources */,
+				D42994BA15012E5700C49BE9 /* WebAlterableControllerImplementation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02345980000FD03B11CA0E72 /* main.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1870340FFE93FCAF11CA0CD7 /* English */,
+			);
+			name = main.nib;
+			sourceTree = "<group>";
+		};
+		0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0867D6ABFE840B52C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0E91AC608A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../libs\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../libs\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../src/cefixTemplate_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../3rdParty/asio/include\"";
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../3rdParty/boost\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "cefix alterable example";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		C0E91AC708A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../libs\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../libs\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../src/cefixTemplate_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../3rdParty/asio/include\"";
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../3rdParty/boost\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "cefix alterable example";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C0E91ACA08A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+			};
+			name = Debug;
+		};
+		C0E91ACB08A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "alterable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91AC608A95435008D54AB /* Debug */,
+				C0E91AC708A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "alterable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91ACA08A95435008D54AB /* Debug */,
+				C0E91ACB08A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */; };
+		8D0C4E8E0486CD37000505A6 /* main.nib in Resources */ = {isa = PBXBuildFile; fileRef = 02345980000FD03B11CA0E72 /* main.nib */; };
+		8D0C4E900486CD37000505A6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20286C2BFDCF999611CA2CEA /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+		D413F9130F4C3F85008479A7 /* w.obj in Resources */ = {isa = PBXBuildFile; fileRef = D413F9120F4C3F85008479A7 /* w.obj */; };
+		D413F9190F4C4008008479A7 /* osgdb_obj.so in CopyFiles */ = {isa = PBXBuildFile; fileRef = D413F9140F4C3FA9008479A7 /* osgdb_obj.so */; };
+		D42BCD1310022D2F0076BBBF /* libBulletSoftBody.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D42BCD1210022D2F0076BBBF /* libBulletSoftBody.a */; };
+		D42BD0A010024B120076BBBF /* cefix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42BD09F10024B120076BBBF /* cefix.framework */; };
+		D42BD0A310024B180076BBBF /* cefix.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42BD09F10024B120076BBBF /* cefix.framework */; };
+		D44A61D50B1A0ACC00960064 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44A61D30B1A0ACC00960064 /* AGL.framework */; };
+		D44A61D60B1A0ACC00960064 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44A61D40B1A0ACC00960064 /* OpenGL.framework */; };
+		D45ED6E20CE3315400D0CD6E /* OpenThreads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6DB0CE3315400D0CD6E /* OpenThreads.framework */; };
+		D45ED6E30CE3315400D0CD6E /* osg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6DC0CE3315400D0CD6E /* osg.framework */; };
+		D45ED6E40CE3315400D0CD6E /* osgDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6DD0CE3315400D0CD6E /* osgDB.framework */; };
+		D45ED6E50CE3315400D0CD6E /* osgGA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6DE0CE3315400D0CD6E /* osgGA.framework */; };
+		D45ED6E60CE3315400D0CD6E /* osgText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6DF0CE3315400D0CD6E /* osgText.framework */; };
+		D45ED6E70CE3315400D0CD6E /* osgUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6E00CE3315400D0CD6E /* osgUtil.framework */; };
+		D45ED6E80CE3315400D0CD6E /* osgViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45ED6E10CE3315400D0CD6E /* osgViewer.framework */; };
+		D45ED89A0CE3316D00D0CD6E /* OpenThreads.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6DB0CE3315400D0CD6E /* OpenThreads.framework */; };
+		D45ED89B0CE3316D00D0CD6E /* osg.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6DC0CE3315400D0CD6E /* osg.framework */; };
+		D45ED89C0CE3316D00D0CD6E /* osgDB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6DD0CE3315400D0CD6E /* osgDB.framework */; };
+		D45ED89D0CE3316D00D0CD6E /* osgGA.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6DE0CE3315400D0CD6E /* osgGA.framework */; };
+		D45ED89E0CE3316D00D0CD6E /* osgText.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6DF0CE3315400D0CD6E /* osgText.framework */; };
+		D45ED89F0CE3316D00D0CD6E /* osgUtil.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6E00CE3315400D0CD6E /* osgUtil.framework */; };
+		D45ED8A00CE3316D00D0CD6E /* osgViewer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45ED6E10CE3315400D0CD6E /* osgViewer.framework */; };
+		D480E9A20EA22D5F0037F5D8 /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D480E99F0EA22D5F0037F5D8 /* libLinearMath.a */; };
+		D480E9A30EA22D5F0037F5D8 /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D480E9A00EA22D5F0037F5D8 /* libBulletCollision.a */; };
+		D480E9A40EA22D5F0037F5D8 /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D480E9A10EA22D5F0037F5D8 /* libBulletDynamics.a */; };
+		D4C5E6E10ED2F4D7002F0387 /* cessna.osg in Resources */ = {isa = PBXBuildFile; fileRef = D4C5E6E00ED2F4D7002F0387 /* cessna.osg */; };
+		D4C5E81A0ED3058A002F0387 /* reflect.rgb in Resources */ = {isa = PBXBuildFile; fileRef = D4C5E8190ED3058A002F0387 /* reflect.rgb */; };
+		D4C5E8660ED30817002F0387 /* dumptruck.osg in Resources */ = {isa = PBXBuildFile; fileRef = D4C5E8650ED30817002F0387 /* dumptruck.osg */; };
+		D4D2E7321303DB1F00E705FE /* cefixbt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2E7311303DB1F00E705FE /* cefixbt.framework */; };
+		D4D2E7351303DB2E00E705FE /* cefixbt.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4D2E7311303DB1F00E705FE /* cefixbt.framework */; };
+		D4FBAFC40ED1CF1D00008F6D /* osgdb_osg.so in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4FBAFC20ED1CF1900008F6D /* osgdb_osg.so */; };
+		D4FBAFC70ED1CF3100008F6D /* cow.osg in Resources */ = {isa = PBXBuildFile; fileRef = D4FBAFC60ED1CF3100008F6D /* cow.osg */; };
+		D4FBAFD60ED1CFEE00008F6D /* lz.rgb in Resources */ = {isa = PBXBuildFile; fileRef = D4FBAFD50ED1CFEE00008F6D /* lz.rgb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D44A61E20B1A0B0300960064 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D4D2E7351303DB2E00E705FE /* cefixbt.framework in CopyFiles */,
+				D42BD0A310024B180076BBBF /* cefix.framework in CopyFiles */,
+				D45ED89A0CE3316D00D0CD6E /* OpenThreads.framework in CopyFiles */,
+				D45ED89B0CE3316D00D0CD6E /* osg.framework in CopyFiles */,
+				D45ED89C0CE3316D00D0CD6E /* osgDB.framework in CopyFiles */,
+				D45ED89D0CE3316D00D0CD6E /* osgGA.framework in CopyFiles */,
+				D45ED89E0CE3316D00D0CD6E /* osgText.framework in CopyFiles */,
+				D45ED89F0CE3316D00D0CD6E /* osgUtil.framework in CopyFiles */,
+				D45ED8A00CE3316D00D0CD6E /* osgViewer.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4FBAFC10ED1CF0500008F6D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D413F9190F4C4008008479A7 /* osgdb_obj.so in CopyFiles */,
+				D4FBAFC40ED1CF1D00008F6D /* osgdb_osg.so in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1870340FFE93FCAF11CA0CD7 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/main.nib; sourceTree = "<group>"; };
+		20286C2BFDCF999611CA2CEA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4E970486CD37000505A6 /* cefixTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cefixTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D413F9120F4C3F85008479A7 /* w.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = w.obj; path = ../media/w.obj; sourceTree = SOURCE_ROOT; };
+		D413F9140F4C3FA9008479A7 /* osgdb_obj.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = osgdb_obj.so; path = ../../../libs/PlugIns/osgdb_obj.so; sourceTree = SOURCE_ROOT; };
+		D42BCD1210022D2F0076BBBF /* libBulletSoftBody.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletSoftBody.a; path = ../../../3rdParty/bullet/lib/libBulletSoftBody.a; sourceTree = SOURCE_ROOT; };
+		D42BD09F10024B120076BBBF /* cefix.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cefix.framework; path = ../../../libs/cefix.framework; sourceTree = SOURCE_ROOT; };
+		D44A61D30B1A0ACC00960064 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		D44A61D40B1A0ACC00960064 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		D45ED6DB0CE3315400D0CD6E /* OpenThreads.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenThreads.framework; path = ../../../libs/frameworks/OpenThreads.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6DC0CE3315400D0CD6E /* osg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osg.framework; path = ../../../libs/frameworks/osg.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6DD0CE3315400D0CD6E /* osgDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgDB.framework; path = ../../../libs/frameworks/osgDB.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6DE0CE3315400D0CD6E /* osgGA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgGA.framework; path = ../../../libs/frameworks/osgGA.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6DF0CE3315400D0CD6E /* osgText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgText.framework; path = ../../../libs/frameworks/osgText.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6E00CE3315400D0CD6E /* osgUtil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgUtil.framework; path = ../../../libs/frameworks/osgUtil.framework; sourceTree = SOURCE_ROOT; };
+		D45ED6E10CE3315400D0CD6E /* osgViewer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgViewer.framework; path = ../../../libs/frameworks/osgViewer.framework; sourceTree = SOURCE_ROOT; };
+		D480E99F0EA22D5F0037F5D8 /* libLinearMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath.a; path = ../../../3rdParty/bullet/lib/libLinearMath.a; sourceTree = SOURCE_ROOT; };
+		D480E9A00EA22D5F0037F5D8 /* libBulletCollision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision.a; path = ../../../3rdParty/bullet/lib/libBulletCollision.a; sourceTree = SOURCE_ROOT; };
+		D480E9A10EA22D5F0037F5D8 /* libBulletDynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics.a; path = ../../../3rdParty/bullet/lib/libBulletDynamics.a; sourceTree = SOURCE_ROOT; };
+		D4C5E6E00ED2F4D7002F0387 /* cessna.osg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cessna.osg; path = "../../../3rdParty/OpenSceneGraph-Data/cessna.osg"; sourceTree = SOURCE_ROOT; };
+		D4C5E8190ED3058A002F0387 /* reflect.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; name = reflect.rgb; path = "../../../3rdParty/OpenSceneGraph-Data/Images/reflect.rgb"; sourceTree = SOURCE_ROOT; };
+		D4C5E8650ED30817002F0387 /* dumptruck.osg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dumptruck.osg; path = "../../../3rdParty/OpenSceneGraph-Data/dumptruck.osg"; sourceTree = SOURCE_ROOT; };
+		D4D2E7311303DB1F00E705FE /* cefixbt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cefixbt.framework; path = ../../../libs/cefixbt.framework; sourceTree = SOURCE_ROOT; };
+		D4FBAFC20ED1CF1900008F6D /* osgdb_osg.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = osgdb_osg.so; path = ../../../libs/PlugIns/osgdb_osg.so; sourceTree = SOURCE_ROOT; };
+		D4FBAFC60ED1CF3100008F6D /* cow.osg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cow.osg; path = "../../../3rdParty/OpenSceneGraph-Data/cow.osg"; sourceTree = SOURCE_ROOT; };
+		D4FBAFD50ED1CFEE00008F6D /* lz.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; name = lz.rgb; path = "../../../3rdParty/OpenSceneGraph-Data/Images/lz.rgb"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+				D44A61D50B1A0ACC00960064 /* AGL.framework in Frameworks */,
+				D44A61D60B1A0ACC00960064 /* OpenGL.framework in Frameworks */,
+				D45ED6E20CE3315400D0CD6E /* OpenThreads.framework in Frameworks */,
+				D45ED6E30CE3315400D0CD6E /* osg.framework in Frameworks */,
+				D45ED6E40CE3315400D0CD6E /* osgDB.framework in Frameworks */,
+				D45ED6E50CE3315400D0CD6E /* osgGA.framework in Frameworks */,
+				D45ED6E60CE3315400D0CD6E /* osgText.framework in Frameworks */,
+				D45ED6E70CE3315400D0CD6E /* osgUtil.framework in Frameworks */,
+				D45ED6E80CE3315400D0CD6E /* osgViewer.framework in Frameworks */,
+				D480E9A20EA22D5F0037F5D8 /* libLinearMath.a in Frameworks */,
+				D480E9A30EA22D5F0037F5D8 /* libBulletCollision.a in Frameworks */,
+				D480E9A40EA22D5F0037F5D8 /* libBulletDynamics.a in Frameworks */,
+				D42BCD1310022D2F0076BBBF /* libBulletSoftBody.a in Frameworks */,
+				D42BD0A010024B120076BBBF /* cefix.framework in Frameworks */,
+				D4D2E7321303DB1F00E705FE /* cefixbt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E970486CD37000505A6 /* cefixTemplate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* cefixTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				20286C2AFDCF999611CA2CEA /* src */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = cefixTemplate;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				20286C2BFDCF999611CA2CEA /* main.cpp */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D413F9120F4C3F85008479A7 /* w.obj */,
+				D4C5E8190ED3058A002F0387 /* reflect.rgb */,
+				D4C5E6E00ED2F4D7002F0387 /* cessna.osg */,
+				D4C5E8650ED30817002F0387 /* dumptruck.osg */,
+				D4FBAFD50ED1CFEE00008F6D /* lz.rgb */,
+				D4FBAFC60ED1CF3100008F6D /* cow.osg */,
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+				0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */,
+				02345980000FD03B11CA0E72 /* main.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D4D2E7311303DB1F00E705FE /* cefixbt.framework */,
+				D42BD09F10024B120076BBBF /* cefix.framework */,
+				D42BCD1210022D2F0076BBBF /* libBulletSoftBody.a */,
+				D413F9140F4C3FA9008479A7 /* osgdb_obj.so */,
+				D4FBAFC20ED1CF1900008F6D /* osgdb_osg.so */,
+				D480E99F0EA22D5F0037F5D8 /* libLinearMath.a */,
+				D480E9A00EA22D5F0037F5D8 /* libBulletCollision.a */,
+				D480E9A10EA22D5F0037F5D8 /* libBulletDynamics.a */,
+				D45ED6DB0CE3315400D0CD6E /* OpenThreads.framework */,
+				D45ED6DC0CE3315400D0CD6E /* osg.framework */,
+				D45ED6DD0CE3315400D0CD6E /* osgDB.framework */,
+				D45ED6DE0CE3315400D0CD6E /* osgGA.framework */,
+				D45ED6DF0CE3315400D0CD6E /* osgText.framework */,
+				D45ED6E00CE3315400D0CD6E /* osgUtil.framework */,
+				D45ED6E10CE3315400D0CD6E /* osgViewer.framework */,
+				D44A61D30B1A0ACC00960064 /* AGL.framework */,
+				D44A61D40B1A0ACC00960064 /* OpenGL.framework */,
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* cefixTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "cefixTemplate" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+				D44A61E20B1A0B0300960064 /* CopyFiles */,
+				D4FBAFC10ED1CF0500008F6D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cefixTemplate;
+			productInstallPath = "$(HOME)/Applications";
+			productName = cefixTemplate;
+			productReference = 8D0C4E970486CD37000505A6 /* cefixTemplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = stephanmaximilianhuber.com;
+			};
+			buildConfigurationList = C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "bullet" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 20286C29FDCF999611CA2CEA /* cefixTemplate */;
+			projectDirPath = "";
+			projectRoot = ..;
+			targets = (
+				8D0C4E890486CD37000505A6 /* cefixTemplate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */,
+				8D0C4E8E0486CD37000505A6 /* main.nib in Resources */,
+				D4FBAFC70ED1CF3100008F6D /* cow.osg in Resources */,
+				D4FBAFD60ED1CFEE00008F6D /* lz.rgb in Resources */,
+				D4C5E6E10ED2F4D7002F0387 /* cessna.osg in Resources */,
+				D4C5E81A0ED3058A002F0387 /* reflect.rgb in Resources */,
+				D4C5E8660ED30817002F0387 /* dumptruck.osg in Resources */,
+				D413F9130F4C3F85008479A7 /* w.obj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E900486CD37000505A6 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02345980000FD03B11CA0E72 /* main.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1870340FFE93FCAF11CA0CD7 /* English */,
+			);
+			name = main.nib;
+			sourceTree = "<group>";
+		};
+		0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0867D6ABFE840B52C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0E91AC608A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../libs\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../libs\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../3rdParty/bullet/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../3rdParty/bullet/lib\"";
+				PRODUCT_NAME = cefixTemplate;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		C0E91AC708A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../libs\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../libs\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../3rdParty/bullet/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../3rdParty/bullet/lib\"";
+				PRODUCT_NAME = cefixTemplate;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C0E91ACA08A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../3rdParty/bullet/src\"";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Debug;
+		};
+		C0E91ACB08A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../3rdParty/bullet/src\"";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "cefixTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91AC608A95435008D54AB /* Debug */,
+				C0E91AC708A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "bullet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91ACA08A95435008D54AB /* Debug */,
+				C0E91ACB08A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

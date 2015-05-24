@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+    <debug>
+        <errorLog>
+            <onScreen type="boolean" value="0"/>
+            <onConsole type="boolean" value="false"/>
+        </errorLog>
+    </debug>
+    <MissingImagePlaceHolder>
+        <image type="string" value="prefs/placeholder.png"/>
+    </MissingImagePlaceHolder>
+    <viewer>
+        <mainwindow>
+            <name type="string" value="springs"/>
+            <width type="integer" value="1024"/>
+            <height type="integer" value="768"/>
+        	<vsync type="boolean" value="1" />
+        </mainwindow>
+        <cefix>
+            <QuicktimeUsePixelBufferObjects type="boolean" value="true"/>
+        </cefix>
+        <showMouseCursor type="boolean" value="true"/>
+        <!--osg notifylevel, moeglich sind DEBUG_FP, DEBUG_INFO, INFO, NOTICE, WARN, ALWAYS-->
+        <notifyLevel type="string" value="WARN"/>
+    </viewer>
+    <groupwidget>
+        <widgets>
+			<drawerWidget>
+                <caption type="string" value="spring properties"/>
+                <collapsedPosition type="vector" x="10" y="-146" z="100"/>
+                <expandedPosition type="vector" x="10" y="0" z="100"/>
+                <tabPosition type="string" value="top"/>
+                <size type="size" width="220" height="146"/>
+                <widgets>
+                	<Vec3SliderWidget>
+                		<captions type="string" value="X GRAVITY|Y GRAVITY|Z GRAVITY" />
+                		<size type="size" width="200" height="11"/>
+                		<deltaY type="float" value="5"/>
+                		<position type="vector" x="10" y="10" z="1" />
+                		<throbbersize type="size" width="11" height="11" />
+                		<min type="float" value="-10"/>
+                		<max type="float" value="10"/>
+                		<resolution type="float" value="10" />
+                		<style type="string" value="right"/>
+                		<responder>
+                			<responder type="symbol" value="gravity_slider" />
+                		</responder>
+                	</Vec3SliderWidget>
+                	<hsliderwithcaptionandvaluewidget>
+                		<caption type="string" value="DAMPING" />
+                		<size type="size" width="200" height="11"/>
+                		<deltaY type="float" value="5"/>
+                		<position type="vector" x="10" y="67" z="1" />
+                		<throbbersize type="size" width="11" height="11" />
+                		<min type="float" value="0" />
+                		<max type="float" value="1" />
+                		<style type="string" value="right"/>
+                		<resolution type="float" value="100" />
+                		<responder>
+                			<responder type="symbol" value="damping_slider" />
+                		</responder>
+                	</hsliderwithcaptionandvaluewidget>
+                	<hsliderwithcaptionandvaluewidget>
+                		<caption type="string" value="STRENGTH" />
+                		<size type="size" width="200" height="11"/>
+                		<deltaY type="float" value="5"/>
+                		<position type="vector" x="10" y="90" z="1" />
+                		<throbbersize type="size" width="11" height="11" />
+                		<min type="float" value="0" />
+                		<max type="float" value="1" />
+                		<resolution type="float" value="1000" />
+                		<style type="string" value="right"/>
+                		<responder>
+                			<responder type="symbol" value="spring_strength" />
+                		</responder>
+                	</hsliderwithcaptionandvaluewidget>
+                	<hsliderwithcaptionandvaluewidget>
+                		<caption type="string" value="MIN DISTANCE" />
+                		<size type="size" width="200" height="11"/>
+                		<deltaY type="float" value="5"/>
+                		<position type="vector" x="10" y="106" z="1" />
+                		<throbbersize type="size" width="11" height="11" />
+                		<min type="float" value="0" />
+                		<max type="float" value="500" />
+                		<resolution type="float" value="1" />
+                		<style type="string" value="right"/>
+                		<responder>
+                			<responder type="symbol" value="spring_min_distance" />
+                		</responder>
+                	</hsliderwithcaptionandvaluewidget>
+                	<hsliderwithcaptionandvaluewidget>
+                		<caption type="string" value="NUM ITERATIONS" />
+                		<size type="size" width="200" height="11"/>
+                		<deltaY type="float" value="5"/>
+                		<position type="vector" x="10" y="126" z="1" />
+                		<throbbersize type="size" width="11" height="11" />
+                		<min type="float" value="1" />
+                		<max type="float" value="50" />
+                		<resolution type="float" value="1" />
+                		<style type="string" value="right"/>
+                		<responder>
+                			<responder type="symbol" value="num_iterations" />
+                		</responder>
+                	</hsliderwithcaptionandvaluewidget>
+                </widgets>
+            </drawerWidget>
+			
+        </widgets>
+        <id type="string" value="widget_1"/>
+    </groupwidget>
+</preferences>

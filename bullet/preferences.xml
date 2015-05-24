@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+    <MissingImagePlaceHolder>
+        <image type="string" value="prefs/placeholder.png"/>
+    </MissingImagePlaceHolder>
+    <viewer>
+        <cefix>
+            <QuicktimeUsePixelBufferObjects type="boolean" value="true"/>
+        </cefix>
+        <showMouseCursor type="boolean" value="true"/>
+        <width type="integer" value="1024"/>
+        <height type="integer" value="768"/>
+        <!--osg notifylevel, moeglich sind DEBUG_FP, DEBUG_INFO, INFO, NOTICE, WARN, ALWAYS-->
+        <notifyLevel type="string" value="WARN"/>
+        <FSAA type="integer" value="0"/>
+        <options>
+            <exitOnEscape type="boolean" value="1"/>
+            <standardSettings type="boolean" value="0"/>
+            <manipulators>
+                <trackball type="boolean" value="1"/>
+                <drive type="boolean" value="0"/>
+                <flight type="boolean" value="0"/>
+                <terrain type="boolean" value="0"/>
+                <ufo type="boolean" value="0"/>
+                <viewer type="boolean" value="1"/>
+                <state type="boolean" value="1"/>
+                <stats type="boolean" value="1"/>
+            </manipulators>
+            <light>
+                <sky type="boolean" value="1"/>
+                <head type="boolean" value="1"/>
+            </light>
+        </options>
+        <perspective>
+            <horizontalFieldOfView type="float" value="-1"/>
+            <verticalFieldOfView type="float" value="45"/>
+            <!-- -1 == automatisch berechen lassen-->
+            <nearPlane type="float" value="1.0"/>
+            <farPlane type="float" value="1000.0"/>
+        </perspective>
+    </viewer>
+</preferences>

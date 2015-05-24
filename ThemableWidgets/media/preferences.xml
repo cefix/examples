@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+    <debug>
+        <errorLog>
+            <onScreen type="boolean" value="0"/>
+            <onConsole type="boolean" value="false"/>
+        </errorLog>
+    </debug>
+    <MissingImagePlaceHolder>
+        <image type="string" value="prefs/placeholder.png"/>
+    </MissingImagePlaceHolder>
+    <viewer>
+        <mainwindow>
+            <name type="string" value="BlobDetection OpenCV"/>
+            <width type="integer" value="1024"/>
+            <height type="integer" value="768"/>
+        </mainwindow>
+        <cefix>
+            <QuicktimeUsePixelBufferObjects type="boolean" value="true"/>
+        </cefix>
+        <showMouseCursor type="boolean" value="true"/>
+        <!--osg notifylevel, moeglich sind DEBUG_FP, DEBUG_INFO, INFO, NOTICE, WARN, ALWAYS-->
+        <notifyLevel type="string" value="WARN"/>
+    </viewer>
+    <groupwidget>
+        <widgets>
+			<windowwidget>
+				<position type="vector" x="500" y="100" z="100" />
+				<size type="size" width="300" height="100" />
+				<title type="string" value="Hallo, Fenster" />
+				<rendermode type="symbol" value="direct"/>
+				<clearcolor type="color" value="#ffffff00"/>
+				<prerender type="boolean" value="0" />
+
+				<widgets>
+					<textinputWidget>
+						<position type="vector" x="10" y="10" z="10" />
+						<size type="size" width="280" height="15" />
+						<inset type="size" width="3" height="3" />
+						<value type="string" value="hier wird text eingegeben" />
+					</textinputWidget>
+					<hSliderWithCaptionAndValueWidget>
+						<caption type="string" value="hSlider" />
+						<size type="size" width="280" height="11" />
+						<position type="vector" x="10" y="30" z="1" />
+						<throbbersize type="size" width="11" height="11" />
+					</hSliderWithCaptionAndValueWidget>
+					<Vec2SliderWidget>
+						<captions type="string" value="x:|y:" />
+						<size type="size" width="280" height="11"/>
+						<deltaY type="float" value="4"/>
+						<position type="vector" x="10" y="50" z="1" />
+						<throbbersize type="size" width="11" height="11" />
+					</Vec2SliderWidget>
+				</widgets>
+			</windowwidget>
+			<Vec2SliderWidget>
+				<captions type="string" value="x:|y:" />
+				<size type="size" width="280" height="15"/>
+				<deltaY type="float" value="15"/>
+				<position type="vector" x="100" y="10" z="1" />
+				<throbbersize type="size" width="15" height="15" />
+			</Vec2SliderWidget>
+			<checkboxWidget>
+				<position type="vector" x="100" y="220" z="0" />
+				<size type="size" width="11" height="11" />
+				<caption type="string" value="click me" />
+			</checkboxWidget>
+			<radiobuttonwidget>
+				<position type="vector" x="100" y="200" z="0" />
+				<size type="size" width="11" height="11" />
+				<caption type="string" value="click me" />
+			</radiobuttonwidget>
+			<textbuttonwidget>
+				<position type="vector" x="100" y="180" z="0" />
+				<size type="size" width="200" height="20" />
+				<id type="symbol" value="button_2" />
+				<caption type="string" value="click me" />
+			</textbuttonwidget>
+			<buttonwidget>
+				<position type="vector" x="100" y="140" z="0" />
+				<size type="size" width="200" height="20" />
+				<id type="symbol" value="button_1" />
+				<selectable type="boolean" value="1" />
+			</buttonwidget>
+			<buttonwidget>
+				<position type="vector" x="320" y="140" z="0" />
+				<size type="size" width="200" height="20" />
+				<id type="symbol" value="button_green" />
+				<selectable type="boolean" value="1" />
+				<customAppearance type="symbol" value="greenbutton" />
+			</buttonwidget>
+			<horizontalSliderWidget>
+				<position type="vector" x="100" y="120" z="0" />
+				<size type="size" width="200" height="22" />
+				<min type="float" value="0" />
+				<max type="float" value="100" />
+				<value type="float" value="0" />
+				<throbberSize type="size" width="22" height="22" />
+				<responder>
+					<responder type="symbol" value="test_text_widget" />
+				</responder>
+			</horizontalSliderWidget>
+			<textWidget>
+				<position type="vector" x="320" y="120" z="0" />
+				<size type="size" width="200" height="22" />
+				<throbberSize type="size" width="22" height="22" />
+				<id type="symbol" value="test_text_widget" />
+				<caption type="string" value="" />
+			</textWidget>
+
+			<verticalSliderWidget>
+				<position type="vector" x="80" y="120" z="0" />
+				<size type="size" width="11" height="200" />
+				<min type="float" value="0" />
+				<max type="float" value="100" />
+				<value type="float" value="0" />
+				<throbberSize type="size" width="11" height="11" />
+			</verticalSliderWidget>
+			<progressbarwidget>
+				<position type="vector" x="100" y="100" z="0" />
+				<size type="size" width="200" height="11" />
+				<id type="symbol" value="progressbar" />
+			</progressbarwidget>
+
+            <drawerWidget>
+                <caption type="string" value="example drawer"/>
+                <collapsedPosition type="vector" x="-340" y="10" z="100"/>
+                <expandedPosition type="vector" x="10" y="10" z="100"/>
+                <tabPosition type="string" value="right"/>
+                <size type="size" width="340" height="180"/>
+                <widgets>
+					<checkboxWidget>
+						<position type="vector" x="100" y="140" z="0" />
+						<size type="size" width="15" height="15" />
+						<caption type="string" value="click me" />
+					</checkboxWidget>
+					<radiobuttonwidget>
+						<position type="vector" x="100" y="120" z="0" />
+						<size type="size" width="15" height="15" />
+						<caption type="string" value="click me" />
+					</radiobuttonwidget>
+					<textinputWidget>
+						<position type="vector" x="10" y="40" z="0" />
+						<size type="size" width="320" height="18" />
+						<inset type="size" width="8" height="5" />
+						<value type="string" value="hier wird text eingegeben" />
+					</textinputWidget>
+					<textinputWidget>
+						<position type="vector" x="10" y="70" z="0" />
+						<size type="size" width="320" height="30" />
+						<inset type="size" width="8" height="8" />
+						<value type="string" value="hier wird text eingegeben" />
+						<font type="string" value="system.xml" />
+						<fontsize type="float" value="18" />
+						<textcolor type="color" value="#000000" />
+					</textinputWidget>
+                    <textbuttonwidget>
+                        <id type="string" value="save_btn"/>
+                        <caption type="string" value="Einstellungen sichern"/>
+                        <position type="vector" x="10" y="10" z="0"/>
+                        <size type="size" width="320" height="20"/>
+                        <responder>
+                            <responder type="string" value="save_preferences"/>
+                        </responder>
+                    </textbuttonwidget>
+                </widgets>
+            </drawerWidget>
+			
+        </widgets>
+        <id type="string" value="widget_1"/>
+    </groupwidget>
+</preferences>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "1.0">
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "0"
+         filePath = "/Users/stephan/Documents/Projekte/cefix/apps/cefix-text-to-speech/src/Text2Speech.cpp"
+         timestampString = "349628299.776029"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "15"
+         endingLineNumber = "15"
+         landmarkName = "class DummyText2SpeechImpl"
+         landmarkType = "3">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "0"
+         filePath = "/Users/stephan/Documents/Projekte/cefix/apps/cefix-text-to-speech/src/Text2Speech.mm"
+         timestampString = "349632708.925191"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "128"
+         endingLineNumber = "128"
+         landmarkName = "getNumVoices()"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "0"
+         filePath = "/Users/stephan/Documents/Projekte/cefix/apps/cefix-text-to-speech/src/Sketch.cpp"
+         timestampString = "349634808.391579"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "43"
+         endingLineNumber = "43"
+         landmarkName = "Sketch::update()"
+         landmarkType = "5">
+         <Locations>
+            <Location
+               shouldBeEnabled = "No"
+               ignoreCount = "0"
+               continueAfterRunningActions = "No"
+               symbolName = "cefix::SketchEventHandler::handle(osgGA::GUIEventAdapter const&amp;, osgGA::GUIActionAdapter&amp;, osg::Object*, osg::NodeVisitor*)"
+               urlString = "file://localhost/Users/stephan/Documents/Projekte/cefix/cefix/osx/../src/ApplicationFramework/Sketch.cpp"
+               timestampString = "349632745.986817"
+               startingColumnNumber = "9223372036854775807"
+               endingColumnNumber = "9223372036854775807"
+               startingLineNumber = "40"
+               endingLineNumber = "40">
+            </Location>
+            <Location
+               shouldBeEnabled = "No"
+               ignoreCount = "0"
+               continueAfterRunningActions = "No"
+               symbolName = "Sketch::update()"
+               urlString = "file://localhost/Users/stephan/Documents/Projekte/cefix/apps/cefix-text-to-speech/osx/../src/Sketch.cpp"
+               timestampString = "349632746.001562"
+               startingColumnNumber = "9223372036854775807"
+               endingColumnNumber = "9223372036854775807"
+               startingLineNumber = "40"
+               endingLineNumber = "40">
+            </Location>
+         </Locations>
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "0"
+         filePath = "/Users/stephan/Documents/Projekte/cefix/apps/cefix-text-to-speech/src/Text2Speech.mm"
+         timestampString = "349632784.203354"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "172"
+         endingLineNumber = "172"
+         landmarkName = "-speechSynthesizer:didFinishSpeaking:"
+         landmarkType = "5">
+      </FileBreakpoint>
+   </FileBreakpoints>
+</Bucket>
